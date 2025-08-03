@@ -60,10 +60,7 @@ docker-compose.yml: Defines and runs multi-container apps (your app + MongoDB).
 
 README.md: Yep, you’re reading it.
 
-📌 Note: We don’t include node_modules in the repo. Why? Because it’s huge, full of third-party code, and regenerated via npm install. It keeps your repo clean and lightweight.
 
-🛠️ Docker Compose Configuration
-Your docker-compose.yml defines two core services:
 
 1️⃣ app (Node.js + Express)
 Builds from the Dockerfile.
@@ -79,45 +76,4 @@ Uses the official MongoDB Docker image.
 
 Exposes port 27017 so your Node.js app can talk to it.
 
-🚀 Getting Started
-Here’s how to get the party started:
-
-Install Docker & Docker Compose on your machine.
-
-Clone this repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/your-username/dockerized-fullstack-application.git
-Navigate into the project directory:
-
-bash
-Copy
-Edit
-cd dockerized-fullstack-application
-Build and run the app:
-
-bash
-Copy
-Edit
-docker-compose up --build
-Visit your app in the browser:
-http://localhost:3000 🎉
-
-🛑 Shutting Things Down
-When you're done, press Ctrl + C in the terminal running Docker.
-
-To clean up containers, networks, and volumes:
-
-bash
-Copy
-Edit
-docker-compose down
-To really clean house and free up space:
-
-bash
-Copy
-Edit
-docker system prune -a
-⚠️ This deletes all unused containers, networks, and images — so use it carefully!
+sed containers, networks, and images — so use it carefully!
